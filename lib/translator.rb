@@ -20,5 +20,10 @@ def get_japanese_emoticon(yaml_file_path, emoticon)
 end
 
 def get_english_meaning(yaml_file_path, emoticon)
-  # code goes here
+  library = load_library(yaml_file_path)
+  if libary[:get_meaning][emoticon]
+    return library[:get_meaning][emoticon]
+  else
+    return 
+end
 end
