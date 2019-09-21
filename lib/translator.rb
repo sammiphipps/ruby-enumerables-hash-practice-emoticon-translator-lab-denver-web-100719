@@ -16,6 +16,7 @@ def get_japanese_emoticon(yaml_file_path, emoticon)
     return library[:get_emoticon][emoticon]
   else 
     return "Sorry, that emoticon was not found"
+  end 
 end
 
 def get_english_meaning
