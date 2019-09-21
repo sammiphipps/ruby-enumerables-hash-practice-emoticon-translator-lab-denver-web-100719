@@ -21,7 +21,7 @@ end
 
 def get_english_meaning(yaml_file_path, emoticon)
   library = load_library(yaml_file_path)
-  if libary[:get_meaning][emoticon]
+  if library[:get_meaning][emoticon]
     return library[:get_meaning][emoticon]
   else
     return "Sorry, that emoticon was not found"
